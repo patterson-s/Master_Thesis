@@ -1,0 +1,83 @@
+### 1 ###
+
+# Target: V_Dem_indices <- cbind(V_Dem_indices, data.frame(V_Dem_countries$v2clacfree))
+
+
+#index_list = ('v2clacfree','v2clrelig','v2cltort','v2clkill','v2cltrnslw','v2clrspct','v2clfmove','v2cldmovem','v2cldmovew','v2xcl_dmove','v2cldiscm','v2cldiscw','v2xcl_disc','v2clslavem','v2clslavef','v2clprptym','v2clprptyw','v2xcl_prpty','v2clacjstm','v2clacjstw','v2xcl_acjst','v2clacjust','v2clsocgrp','v2clrgunev','v2clsnlpct','v2x_egaldem','v2x_egal','v2x_frassoc_thick','v2x_freexp_thick','v2x_freexp','v2xme_altinf','v2xcl_rol' ,'v2x_jucon','v2xlg_legcon','v2x_cspart','v2xel_locelec','v2xel_regelec','v2xeg_eqprotec','v2xeg_eqaccess','v2xeg_eqdr','v2xcs_ccsi','v2x_gender','v2x_gencl','v2x_gencs','v2x_genpp','v2x_elecreg','v2xex_elecreg','v2xlg_elecreg','v2x_civlib','v2x_clpriv','v2x_clpol','v2x_clphy','v2x_accountability','v2x_veracc','v2x_horacc','v2x_diagacc','v2exrescon','v2lginvstp','v2lgotovst','v2lgwarlaw','v2dlcommon','v2dlencmps','v2jupoatck','v2juaccnt','v2juhcind','v2juncind')
+
+
+
+#for index in index_list:
+#    py1 = "V_Dem_indices <- cbind(V_Dem_indices, data.frame(V_Dem_countries_ordered$" + index + "))"
+#    print py1
+
+
+
+
+### 2 ###
+
+
+#for index in index_list:
+#    py2 = "colnames(V_Dem_clean)[x] <- '" + index + "'"
+
+#    print py2
+
+
+
+### 3 ###
+
+#country_list = ('Australia', 'Austria', 'Belgium', 'Canada', 'Denmark', 'Finland', 'France', 'Germany', 'Greece', 'Ireland', 'Italy',\
+#               'Netherlands', 'NewZealand', 'Norway', 'Portugal', 'Sweden', 'Spain', 'Switzerland', 'UK', 'US')
+
+#country_list_2 = ('Australia', 'Austria', 'Belgium', 'Canada', 'Denmark', 'Finland', 'France', 'Germany', 'Greece', 'Ireland', 'Italy',\
+#               'Netherlands', 'New Zealand', 'Norway', 'Portugal', 'Sweden', 'Spain', 'Switzerland', 'United Kingdom', 'United States')
+
+
+#for country in country_list_2:
+#    py3 = "master_" + country + " <- subset(master_data, master_data$Country == '" + country + "')"
+#    print py3
+
+
+
+
+### 4 ###
+#(master_Country$index[9] - master_Country$index[1]) != 0
+
+#for country in country_list:
+
+
+#    for index in index_list:
+#        py4 = "(master_" + country + "$" + index + "[9] - master_" + country + "$" + index + "[1]) != 0"
+
+#        print py4
+
+
+### 5 ###
+
+#index_short = ('v2xcl_disc', 'v2clrelig', 'v2x_egal', 'v2xcl_rol', 'v2cltort','v2clacjust','v2x_freexp_thick'
+#,'v2x_freexp', 'v2x_jucon', 'v2xme_altinf', 'v2xeg_eqaccess', 'v2xeg_eqprotec', 'v2xeg_eqdr', 'v2lginvstp', 'v2dlencmps', 'v2jupoatck',
+#'v2clgotovst', 'v2juhcind')
+
+#cor(v2xcl_disc_sub$`Counter-terror Legislation`, v2xcl_disc_sub$v2xcl_disc, use = 'p')
+
+#for index in index_short:
+#    py5 = "cor(" + index + "_sub$`Counter-terror Legislation`, " + index + "_sub$" + index + ", use = 'p')"
+#    print py5
+
+
+### 6 ###
+
+#index_shorter = ('v2cltort','v2xcl_rol', 'v2xeg_eqprotec','v2clrelig', 'v2x_egal', 'v2clacjust','v2xme_altinf', 'v2xeg_eqaccess', 'v2xeg_eqdr', 'v2lginvstp', 'v2lgotovst', 'v2juhcind', 'v2x_egaldem', 'v2xcl_disc' )
+
+#plot(x = v2xeg_eqaccess_sub$v2xeg_eqaccess, y = v2xeg_eqaccess_sub$`Counter-terror Legislation`, main = 'v2xeg_eqaccess v. Counter-terror Legislation', xlab = 'v2xeg_eqaccess Index', ylab = 'Volume of Counter-terror Legislation' )
+#line(x = v2xeg_eqaccess_sub$v2xeg_eqaccess, y = v2xeg_eqaccess_sub$`Counter-terror Legislation`)
+
+#for index in index_shorter:
+#    py6_1 = "plot(x = " + index + "_sub$" + index + ", y = " + index + "_sub$`Counter-terror Legislation`, main = '" + index + " v. Counter-terror Legislation', xlab = '" + index + " Index', ylab = 'Volume of Counter-terror Legislation' )"
+#    py6_2 = "line(x = " + index + "_sub$" + index + ", y = " + index + "_sub$`Counter-terror Legislation`)"
+
+#    print py6_1
+#    print py6_2
+#    print ""
+
+
